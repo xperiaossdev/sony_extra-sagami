@@ -1,0 +1,18 @@
+#!/system/bin/bash
+
+LOG=/dev/null
+LOG=/system/usr/share/alsa/debug/amixer.state
+
+rm -f $LOG
+touch $LOG
+exec >> "${LOG}" 2>&1
+
+	
+amixer contents
+	
+
+
+sed -i -e "s/amixer: Control default element read error: No such device/ /g" -e "s/amixer: Control default element read error: Operation not permitted/ /g" -e "s/amixer: Control default element read error: Invalid argument/ /g" -e "/^ *$/d" /system/usr/share/alsa/debug/amixer.state
+
+
+exit 0 ;

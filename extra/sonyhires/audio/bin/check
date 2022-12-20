@@ -1,0 +1,5 @@
+#!/system/bin/bash
+
+	dumpsys media.audio_flinger;
+
+exit 0;
