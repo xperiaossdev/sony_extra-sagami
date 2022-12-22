@@ -153,7 +153,7 @@ android_app_import {
 cc_prebuilt_binary {
 	name: "alsacap",
 	owner: "sony",
-	src: "extra/sonyhires/audio/bin/alsacap",
+	srcs: ["extra/sonyhires/audio/bin/alsacap"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -165,7 +165,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
 	name: "alsactl",
 	owner: "sony",
-	src: "extra/sonyhires/audio/bin/alsactl",
+	srcs: ["extra/sonyhires/audio/bin/alsactl"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -177,7 +177,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
 	name: "alsaucm",
 	owner: "sony",
-	src: "extra/sonyhires/audio/bin/alsaucm",
+	srcs: ["extra/sonyhires/audio/bin/alsaucm"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -189,7 +189,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
 	name: "amixer",
 	owner: "sony",
-	src: "extra/sonyhires/audio/bin/amixer",
+	srcs: ["extra/sonyhires/audio/bin/amixer"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -201,7 +201,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
 	name: "aplay",
 	owner: "sony",
-	src: "extra/sonyhires/audio/bin/aplay",
+	srcs: ["extra/sonyhires/audio/bin/aplay"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -213,7 +213,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
 	name: "arecord",
 	owner: "sony",
-	src: "extra/sonyhires/audio/bin/arecord",
+	srcs: ["extra/sonyhires/audio/bin/arecord"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -225,7 +225,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
 	name: "check",
 	owner: "sony",
-	src: "extra/sonyhires/audio/bin/check",
+	srcs: ["extra/sonyhires/audio/bin/check"],
 	check_elf_files: false,
 	strip: {
 		none: true,
@@ -237,7 +237,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
 	name: "cmixer",
 	owner: "sony",
-	src: "extra/sonyhires/audio/bin/cmixer",
+	srcs: ["extra/sonyhires/audio/bin/cmixer"],
 	check_elf_files: false,
 	strip: {
 		none: true,
