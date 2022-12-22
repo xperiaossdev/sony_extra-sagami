@@ -82,6 +82,10 @@ PRODUCT_COPY_FILES += \
 
 ### SonyHiRes End
 
+# Controller Support
+ PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
+
 # Dolby
  PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/extra/dolby/system/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.dolby.hardware.dms@2.0.so \
@@ -94,38 +98,34 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/extra/dolby/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
 
 # Dolby Props
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.audio.dolby.ds2.enabled=false \
-    vendor.audio.dolby.ds2.hardbypass=false \
-    ro.vendor.dolby.dax.version=DAX3_3.5.1.28_r1
+#PRODUCT_VENDOR_PROPERTIES += \
+#    vendor.audio.dolby.ds2.enabled=false \
+#    vendor.audio.dolby.ds2.hardbypass=false \
+#    ro.vendor.dolby.dax.version=DAX3_3.5.1.28_r1
 
 # Dolby Libs
- PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/dolby/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/dolby/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64)
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/dolby/vendor/bin/hw/,$(TARGET_COPY_OUT_VENDOR)/bin/hw)
+# PRODUCT_COPY_FILES += \
+#    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/dolby/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
+#    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/dolby/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64)
+#    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/dolby/vendor/bin/hw/,$(TARGET_COPY_OUT_VENDOR)/bin/hw)
 
 # Dolby Configs
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/extra/dolby/configs/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
-    $(LOCAL_PATH)/extra/dolby/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    $(LOCAL_PATH)/extra/dolby/configs/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/extra/dolby/configs/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+#    $(LOCAL_PATH)/extra/dolby/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
+#    $(LOCAL_PATH)/extra/dolby/configs/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
 
 # Dolby SEPolicy
- BOARD_VENDOR_SEPOLICY_DIRS += $(LOCAL_PATH)/extra/dolby/sepolicy/vendor
+# BOARD_VENDOR_SEPOLICY_DIRS += $(LOCAL_PATH)/extra/dolby/sepolicy/vendor
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(LOCAL_PATH)/extra/dolby/configs/dolby_framework_matrix.xml
-DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/extra/dolby/configs/vendor.dolby.hardware.dms.xml
+# DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(LOCAL_PATH)/extra/dolby/configs/dolby_framework_matrix.xml
+# DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/extra/dolby/configs/vendor.dolby.hardware.dms.xml
 
 # Enable Codec Support (For Dolby)
-AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
+# AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 
 # Dolby Atmos PKGs
- PRODUCT_PACKAGES += \
-    daxUI \
-    daxService \
-
-# Controller Support
- PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
+# PRODUCT_PACKAGES += \
+#  daxUI \
+#    daxService \
