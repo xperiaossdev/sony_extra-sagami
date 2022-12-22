@@ -7,7 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/product/,$(TARGET_COPY_OUT_SYSTEM)/product/)
 
 # Camera
- PRODUCT_PACKAGES +=
+ PRODUCT_PACKAGES += \
     PhotoPro \
     CinemaPro \
     VideoPro \
