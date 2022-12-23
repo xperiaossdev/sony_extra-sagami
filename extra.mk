@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/extra/sonyhires/audio/usr/share/alsa/alsa.conf:$(TARGET_COPY_OUT_SYSTEM)/usr/share/alsa/alsa.conf \
    $(LOCAL_PATH)/extra/sonyhires/audio/usr/share/alsa/cards/aliases.alisp:$(TARGET_COPY_OUT_SYSTEM)/usr/share/alsa/cards/aliases.alisp \
    $(LOCAL_PATH)/extra/sonyhires/audio/usr/share/alsa/cards/aliases.conf:$(TARGET_COPY_OUT_SYSTEM)/usr/share/alsa/cards/aliases.conf \
-   $(LOCAL_PATH)/extra/sonyhires/audio/usr/share/alsa/pcm/center_life.conf:$(TARGET_COPY_OUT_SYSTEM)/usr/share/alsa/pcm/center_life.conf \
+   $(LOCAL_PATH)/extra/sonyhires/audio/usr/share/alsa/pcm/center_lfe.conf:$(TARGET_COPY_OUT_SYSTEM)/usr/share/alsa/pcm/center_lfe.conf \
    $(LOCAL_PATH)/extra/sonyhires/audio/usr/share/alsa/pcm/default.conf:$(TARGET_COPY_OUT_SYSTEM)/usr/share/alsa/pcm/default.conf \
    $(LOCAL_PATH)/extra/sonyhires/audio/usr/share/alsa/pcm/dmix.conf:$(TARGET_COPY_OUT_SYSTEM)/usr/share/alsa/pcm/dmix.conf \
    $(LOCAL_PATH)/extra/sonyhires/audio/usr/share/alsa/pcm/dpl.conf:$(TARGET_COPY_OUT_SYSTEM)/usr/share/alsa/pcm/dpl.conf \
@@ -76,8 +76,8 @@ PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/extra/sonyhires/audio/vendor/etc/audio/sku_shima_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/vendor/etc/audio/sku_shima_qssi/audio_policy_configuration.xml \
    $(LOCAL_PATH)/extra/sonyhires/audio/vendor/etc/audio/sku_yupik/audio_effects.xml:$(TARGET_COPY_OUT_SYSTEM)/vendor/etc/audio/sku_yupik/audio_effects.xml \
    $(LOCAL_PATH)/extra/sonyhires/audio/vendor/etc/audio/sku_yupik/audio_io_policy.conf:$(TARGET_COPY_OUT_SYSTEM)/vendor/etc/audio/sku_yupik/audio_io_policy.conf \
-   $(LOCAL_PATH)/extra/sonyhires/audio/vendor/etc/audio/sku_yupik/mixer_paths_shimaidp.xml:$(TARGET_COPY_OUT_SYSTEM)/vendor/etc/audio/sku_yupik/mixer_paths_yupikidp.xml \
-   $(LOCAL_PATH)/extra/sonyhires/audio/vendor/etc/audio/sku_yupik/mixer_paths_shimaidps.xml:$(TARGET_COPY_OUT_SYSTEM)/vendor/etc/audio/sku_yupik/mixer_paths_yupikqrd.xml \
+   $(LOCAL_PATH)/extra/sonyhires/audio/vendor/etc/audio/sku_yupik/mixer_paths_yupikidp.xml:$(TARGET_COPY_OUT_SYSTEM)/vendor/etc/audio/sku_yupik/mixer_paths_yupikidp.xml \
+   $(LOCAL_PATH)/extra/sonyhires/audio/vendor/etc/audio/sku_yupik/mixer_paths_yupikqrd.xml:$(TARGET_COPY_OUT_SYSTEM)/vendor/etc/audio/sku_yupik/mixer_paths_yupikqrd.xml \
    $(LOCAL_PATH)/extra/sonyhires/audio/vendor/etc/audio/sku_yupik_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/vendor/etc/audio/sku_yupik_qssi/audio_policy_configuration.xml
 
 ### SonyHiRes End
@@ -87,18 +87,18 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
 
 # Dolby
- PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/extra/dolby/system/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.dolby.hardware.dms@2.0.so \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/sysconfig/config-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.dolby.daxappui.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/sysconfig/config-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.dolby.daxservice.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/privapp-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxappui.xml \
-    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml \
-    $(LOCAL_PATH)/extra/dolby/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
-    $(LOCAL_PATH)/extra/dolby/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+# PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/extra/dolby/system/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.dolby.hardware.dms@2.0.so \
+#    $(LOCAL_PATH)/extra/dolby/system_ext/etc/sysconfig/config-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.dolby.daxappui.xml \
+#    $(LOCAL_PATH)/extra/dolby/system_ext/etc/sysconfig/config-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/config-com.dolby.daxservice.xml \
+#    $(LOCAL_PATH)/extra/dolby/system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml \
+#    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/privapp-com.dolby.daxappui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxappui.xml \
+#    $(LOCAL_PATH)/extra/dolby/system_ext/etc/permissions/privapp-com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.dolby.daxservice.xml \
+#    $(LOCAL_PATH)/extra/dolby/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
+#    $(LOCAL_PATH)/extra/dolby/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
 
 # Dolby Props
-#PRODUCT_VENDOR_PROPERTIES += \
+# PRODUCT_VENDOR_PROPERTIES += \
 #    vendor.audio.dolby.ds2.enabled=false \
 #    vendor.audio.dolby.ds2.hardbypass=false \
 #    ro.vendor.dolby.dax.version=DAX3_3.5.1.28_r1
@@ -106,7 +106,7 @@ PRODUCT_COPY_FILES += \
 # Dolby Libs
 # PRODUCT_COPY_FILES += \
 #    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/dolby/vendor/lib/,$(TARGET_COPY_OUT_VENDOR)/lib) \
-#    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/dolby/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64)
+#    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/dolby/vendor/lib64/,$(TARGET_COPY_OUT_VENDOR)/lib64) \
 #    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/dolby/vendor/bin/hw/,$(TARGET_COPY_OUT_VENDOR)/bin/hw)
 
 # Dolby Configs
@@ -128,4 +128,4 @@ PRODUCT_COPY_FILES += \
 # Dolby Atmos PKGs
 # PRODUCT_PACKAGES += \
 #  daxUI \
-#    daxService \
+#  daxService
