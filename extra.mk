@@ -4,7 +4,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # SonyFramework
  PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/system/,$(TARGET_COPY_OUT_SYSTEM)/) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/product/,$(TARGET_COPY_OUT_SYSTEM)/product/)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/product/,$(TARGET_COPY_OUT_PRODUCT)/)
 
 # Camera
  PRODUCT_PACKAGES += \
