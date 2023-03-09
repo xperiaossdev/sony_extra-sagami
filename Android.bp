@@ -2,6 +2,18 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "DolbySoundLite",
+	owner: "sony",
+	apk: "extra/dolby/DolbySoundLite.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "PhotoPro",
 	owner: "sony",
 	apk: "extra/camera/PhotoPro/PhotoPro.apk",

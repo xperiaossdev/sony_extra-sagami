@@ -15,6 +15,10 @@ PRODUCT_SOONG_NAMESPACES += \
     CreativeEffect \
     PortraitSelfie
 
+# Dolby
+ PRODUCT_PACKAGES += \
+    DolbySoundLite
+
 # Controller Support
  PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
