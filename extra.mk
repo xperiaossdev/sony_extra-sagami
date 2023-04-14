@@ -1,3 +1,4 @@
+# Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extra-sagami
 
@@ -15,9 +16,9 @@ PRODUCT_SOONG_NAMESPACES += \
     CreativeEffect \
     PortraitSelfie
 
-# Dolby
+# 360 Reality Audio Lite
  PRODUCT_PACKAGES += \
-    DolbySoundLite
+    360RealityAudioLite
 
 # Controller Support
  PRODUCT_COPY_FILES += \

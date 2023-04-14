@@ -2,9 +2,9 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "DolbySoundLite",
+	name: "360RealityAudioLite",
 	owner: "sony",
-	apk: "extra/dolby/DolbySoundLite.apk",
+	apk: "extra/360ra/360RALite.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
