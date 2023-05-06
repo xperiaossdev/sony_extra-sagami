@@ -21,24 +21,18 @@ PRODUCT_SOONG_NAMESPACES += \
 # Motorola Dolby Atmos
     $(call inherit-product, vendor/sony/extra-sagami/extra/dolby/dolby.mk)
 
-# SonyFramework
+# Sony Framework
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/system/,$(TARGET_COPY_OUT_SYSTEM)/) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/system_ext/,$(TARGET_COPY_OUT_SYSTEM_EXT)/) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/product/,$(TARGET_COPY_OUT_PRODUCT)/)
+
+# Sony Camera
+    $(call inherit-product, vendor/sony/extra-sagami/extra/sonycamera/camera.mk)
+
+# Sony Apps
+    $(call inherit-product, vendor/sony/extra-sagami/extra/sonyapps/apps.mk)
 
 # Controller Support
  PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
-
-# Camera
-PRODUCT_PACKAGES += \
-    PhotoPro \
-    CinemaPro \
-    VideoPro \
-    CameraPanorama \
-    CreativeEffect \
-    PortraitSelfie
-
-# 360 Reality Audio
-PRODUCT_PACKAGES += \
-    360RealityAudioLite

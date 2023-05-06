@@ -5,13 +5,4 @@
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
         <permission name="com.sonyericsson.permission.CREDENTIALMANAGER"/>
     </privapp-permissions>
-
-    <privapp-permissions package="com.sonyericsson.music">
-        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
-    </privapp-permissions>
-
-    <privapp-permissions package="com.sonymobile.moviecreator">
-        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
-    </privapp-permissions>
-
 </permissions>
