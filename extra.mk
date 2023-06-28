@@ -18,7 +18,7 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extra-sagami
 
-# Motorola Dolby Atmos
+# Dolby Sound
     $(call inherit-product, vendor/sony/extra-sagami/extra/dolby/dolby.mk)
 
 # Sony Framework
