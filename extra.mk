@@ -23,15 +23,15 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Sony Framework
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/system/,$(TARGET_COPY_OUT_SYSTEM)/) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/system_ext/,$(TARGET_COPY_OUT_SYSTEM_EXT)/) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/sonyframework/product/,$(TARGET_COPY_OUT_PRODUCT)/)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/framework/system/,$(TARGET_COPY_OUT_SYSTEM)/) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/framework/system_ext/,$(TARGET_COPY_OUT_SYSTEM_EXT)/) \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/framework/product/,$(TARGET_COPY_OUT_PRODUCT)/)
 
 # Sony Camera
-    $(call inherit-product, vendor/sony/extra-sagami/extra/sonycamera/camera.mk)
+    $(call inherit-product, vendor/sony/extra-sagami/extra/camera/camera.mk)
 
 # Sony Apps
-    $(call inherit-product, vendor/sony/extra-sagami/extra/sonyapps/apps.mk)
+    $(call inherit-product, vendor/sony/extra-sagami/extra/apps/apps.mk)
 
 # Controller Support
  PRODUCT_COPY_FILES += \
