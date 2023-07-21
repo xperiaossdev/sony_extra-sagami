@@ -3,4 +3,3 @@
     <library name="com.sonyericsson.colorextraction"
         file="/system/framework/com.sonyericsson.colorextraction_impl.jar"/>
 </permissions>
-

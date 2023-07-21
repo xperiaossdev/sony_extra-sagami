@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- for the partition: /system -->
 <permissions>
     <privapp-permissions package="com.sonyericsson.album">
         <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
