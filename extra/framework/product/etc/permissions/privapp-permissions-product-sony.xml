@@ -13,4 +13,8 @@
     <privapp-permissions package="com.sonymobile.photopro">
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
+
+    <privapp-permissions package="jp.co.sony.mc.usbextoutaudio">
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
 </permissions>
