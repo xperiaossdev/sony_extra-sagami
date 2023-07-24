@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     360RALite \
     MovieCreator \
     SomcColorGamut \
+    SomcDualshockManager \
     SomcMediaExtensionProvider \
     ExternalMonitor \
     UsbExtOutAudio \
