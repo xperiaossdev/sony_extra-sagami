@@ -20,6 +20,7 @@ android_app_import {
 	owner: "sony",
 	apk: "SonyMusic/SonyMusic.apk",
 	presigned: true,
+        overrides: ["Eleven"],
 	dex_preopt: {
 		enabled: false,
 	},
