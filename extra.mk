@@ -33,6 +33,6 @@ PRODUCT_COPY_FILES += \
 # Sony Apps
     $(call inherit-product, vendor/sony/extra-sagami/extra/apps/apps.mk)
 
-# Controller Support
+# Game Controllers
  PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/keylayout/,$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/)
