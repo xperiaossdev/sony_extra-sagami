@@ -27,5 +27,4 @@ PRODUCT_PACKAGES += \
     SomcDualshockManager \
     SomcMediaExtensionProvider \
     ExternalMonitor \
-    UsbExtOutAudio \
-    UsbExtOutVideo
+    UsbExtOutAudio

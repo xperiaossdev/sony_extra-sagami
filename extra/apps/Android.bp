@@ -111,15 +111,3 @@ android_app_import {
 	privileged: true,
 	product_specific: true,
 }
-
-android_app_import {
-	name: "UsbExtOutVideo",
-	owner: "sony",
-	apk: "UsbExtOutVideo/UsbExtOutVideo.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
