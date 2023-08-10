@@ -1,0 +1,9 @@
+type threesixtyra_app_data_file, file_type;
+type threesixtyra_app, file_type;
+
+# Define the type for threesixtyra_app_data_file
+typeattribute threesixtyra_app_data_file file_type;
+
+# Allow threesixtyra_app to manage its data files
+allow threesixtyra_app threesixtyra_app_data_file:file { read write };
+

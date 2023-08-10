@@ -1,4 +1,2 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.media\.c2@1\.0-threesixty-ra-service u:object_r:mediacodec_exec:s0
 /data/vendor/360ra(/.*)? u:object_r:threesixtyra_vendor_data_file:s0
-
-

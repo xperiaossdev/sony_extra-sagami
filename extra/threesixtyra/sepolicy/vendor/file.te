@@ -1,5 +1,10 @@
+attribute userfaultfd;
+attribute seinfo;
+attribute isPrivApp;
+
+type threesixtyra_vendor_data_file, file_type;
 type threesixtyra_config_prop, property_type;
-type threesixtyra_app, domain;
-type threesixtyra_app_userfaultfd, file_type;
+type threesixtyra_app_userfaultfd, file_type, userfaultfd;
 
-
+type vendor_360ra_prop, property_type;
+type vendor_360ra_restricted_prop, property_type;

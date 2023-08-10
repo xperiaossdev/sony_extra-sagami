@@ -1,0 +1,5 @@
+vendor.360ra.                                   u:object_r:vendor_360ra_prop:s0
+persist.vendor.360ra.                           u:object_r:vendor_360ra_prop:s0
+persist.vendor.360ra.debug.tuning.parameter     u:object_r:vendor_360ra_restricted_prop:s0
+vendor.sony_spatializer.suppress.dolby          u:object_r:vendor_spatializer_prop:s0
+threesixtyra.upmix.auto.video                   u:object_r:threesixtyra_config_prop:s0

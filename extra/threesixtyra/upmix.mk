@@ -30,6 +30,7 @@ PRODUCT_COPY_FILES += \
     $(UPMIX_FILES)/configs/seccomp_policy/android.hardware.media.c2@1.2-default-seccomp_policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-default-seccomp_policy
 
 # HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(UPMIX_FILES)/configs/vintf/c2/threesixtyra_framework_manifest.xml
 DEVICE_MANIFEST_FILE += $(UPMIX_FILES)/configs/vintf/c2/vendor.threesixty_ra.codec2.xml
 
 # 360RA Vendor Props
