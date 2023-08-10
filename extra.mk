@@ -21,6 +21,9 @@ PRODUCT_SOONG_NAMESPACES += \
 # Dolby Sound
     $(call inherit-product, vendor/sony/extra-sagami/extra/dolby/dolby.mk)
 
+# 360 Reality Audio Upmix
+    $(call inherit-product, vendor/sony/extra-sagami/extra/threesixtyra/upmix.mk)
+
 # Sony Framework
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/extra/framework/system/,$(TARGET_COPY_OUT_SYSTEM)/) \

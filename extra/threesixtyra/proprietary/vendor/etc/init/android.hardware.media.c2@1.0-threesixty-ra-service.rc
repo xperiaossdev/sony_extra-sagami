@@ -1,0 +1,12 @@
+service android-hardware-media-c2-threesixty-ra-hal-1-0 /vendor/bin/hw/android.hardware.media.c2@1.0-threesixty-ra-service
+    class hal
+    user mediacodec
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks
+
+on post-fs-data
+    # Create 360ra dir for audioHAL
+    mkdir /data/vendor/360ra 0775 audioserver audio
+    copy /vendor/etc/alc.speaker.bin /data/vendor/360ra/alc.speaker.bin
+    chmod 0770 /data/vendor/360ra/alc.speaker.bin
+    chown audioserver audio /data/vendor/360ra/alc.speaker.bin

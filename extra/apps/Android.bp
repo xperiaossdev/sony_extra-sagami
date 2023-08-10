@@ -29,18 +29,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "360RALite",
-	owner: "sony",
-	apk: "360RA/360RALite.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "MovieCreator",
 	owner: "sony",
 	apk: "MovieCreator/MovieCreator.apk",

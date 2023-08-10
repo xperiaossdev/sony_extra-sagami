@@ -1,0 +1,5 @@
+type threesixtyra_config_prop, property_type;
+type threesixtyra_app, domain;
+type threesixtyra_app_userfaultfd, file_type;
+
+

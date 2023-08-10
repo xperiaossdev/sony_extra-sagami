@@ -21,7 +21,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Sony Apps
 PRODUCT_PACKAGES += \
     SemcMusic \
-    360RALite \
     MovieCreator \
     SomcColorGamut \
     SomcDualshockManager \

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Feature for 360RA.
+-->
+<permissions>
+    <feature name="com.sony.360ra" version="2" />
+</permissions>
+

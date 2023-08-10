@@ -2,3 +2,5 @@
 /data/vendor/dolby(/.*)?		u:object_r:vendor_dolby_data_file:s0
 
 /(system/vendor|vendor)/bin/hw/vendor\.dolby\.media\.c2@1\.0-service       u:object_r:mediacodec_exec:s0
+
+

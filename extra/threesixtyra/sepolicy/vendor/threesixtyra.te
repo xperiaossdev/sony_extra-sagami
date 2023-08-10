@@ -1,0 +1,40 @@
+# 360RA
+type_transition threesixtyra_app tmpfs:file appdomain_tmpfs;
+allow audioserver threesixtyra_config_prop:property_service set;
+allow audioserver threesixtyra_config_prop:file read;
+allow hal_audio_default threesixtyra_vendor_data_file:dir rw_dir_perms;
+allow hal_audio_default threesixtyra_vendor_data_file:file rw_file_perms;
+allow hal_audio_default threesixtyra_config_prop:file read;
+allow hal_audio_default vendor_360ra_prop:file read;
+allow hal_audio_default vendor_360ra_restricted_prop:file read;
+allow hal_audio_default vendor_360ra_prop:property_service set;
+allow mediaserver threesixtyra_config_prop:property_service set;
+allow mediaserver threesixtyra_config_prop:file read;
+allow threesixtyra_app threesixtyra_vendor_data_file:dir rw_dir_perms;
+allow threesixtyra_app threesixtyra_vendor_data_file:file create_file_perms;
+allow threesixtyra_app vendor_360ra_restricted_prop:file read;
+allow vendor_init vendor_360ra_prop:property_service set;
+allow vendor_init vendor_360ra_prop:file read;
+allow threesixtyra_app threesixtyra_app_userfaultfd:chr_file rw_file_perms;
+allow threesixtyra_app appdomain_tmpfs:file read;
+
+# 360RA Service Domain
+typeattribute threesixtyra_app appdomain;
+
+# 360RA Userfaultfd
+typeattribute threesixtyra_app_userfaultfd file_type;
+typeattribute threesixtyra_app_userfaultfd userfaultfd;
+
+# 360RA Vendor 
+vendor.360ra.                                   u:object_r:vendor_360ra_prop:s0
+persist.vendor.360ra.                           u:object_r:vendor_360ra_prop:s0
+persist.vendor.360ra.debug.tuning.parameter     u:object_r:vendor_360ra_restricted_prop:s0
+vendor.sony_spatializer.suppress.dolby          u:object_r:vendor_spatializer_prop:s0
+
+# 360RA App
+user=_app seinfo=platform name=jp.co.sony.threesixtyra.system isPrivApp=true domain=threesixtyra_app type=app_data_file
+
+# 360RA Config Prop
+threesixtyra.upmix.auto.video                   u:object_r:threesixtyra_config_prop:s0
+
+
