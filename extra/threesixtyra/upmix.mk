@@ -16,7 +16,7 @@
 #
 
 # 360RA Path
-UPMIX_FILES := vendor/sony/extra-sagami/extra/threesixtyra
+UPMIX_FILES += vendor/sony/extra-sagami/extra/threesixtyra
 
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
@@ -42,7 +42,11 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
     SoundEnhancement \
     ThreeSixtyRASettings \
-    ThreeSixtyRASystem \
+    ThreeSixtyRASystem
+
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
     ThreeSixtyRASystem-Overlay
 
 # C2 Media Codec Configs
